@@ -1,0 +1,8 @@
+<%= simple_form_for @article, defaults: {label: false}  do |f| %>
+
+  <%= f.input :title, placeholder: 'Title' %>
+
+  <%= f.input :content, placeholder: 'Content' %>
+
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>
