@@ -7,7 +7,7 @@
     <% @articles.each do |article| %>
     <article>
       <h3><%= link_to article.title.capitalize, article_path(article)  %></h3>
-      <p><%= article.content.capitalize %></p>
+      <p><%= article.teaser %></p>
     </article>
     <% end %>
   </div>
